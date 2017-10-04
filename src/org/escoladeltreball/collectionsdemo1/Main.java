@@ -15,6 +15,15 @@ import java.util.List;
  */
 public class Main {
 
+	public static List<String> subLlista(List<String> list, String str) {
+		List<String> search = new LinkedList<>();
+		for (String string: list) {
+			if (str.equals(string)) {
+				search.add(str);
+			}
+		}
+		return search;
+	}
 	/**
 	 * @param args
 	 */
@@ -27,6 +36,7 @@ public class Main {
 		list.add("Echo");
 		list.add("Delta");
 		list.add("Zulu");
+		list.add("Albacete");
 		
 		list.remove("Charlie");
 		
